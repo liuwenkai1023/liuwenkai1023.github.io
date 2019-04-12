@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title><![CDATA[Cocos Creator中的屏幕适配解决方案]]></title>
-    <url>%2F2019-04-12-cocos-creator-%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D.html</url>
-    <content type="text"><![CDATA[前言之前总是看到很多同学在论坛上询问关于&quot;Cocos Creator&quot;屏幕适配相关的问题， 这里简单说一下&quot;Cocos Creator 全屏幕适配&quot;。 ps：本贴以竖屏进行讲解，横屏方案基本相同（已附上demo） ###其实利用好 Fit Width 和 Fit height 以及 cc.Widget组件 适配起来真的很简单。 对于设计为竖屏的游戏，采用Fit Width + cc.Widget 对于设计为横屏的游戏，采用Fit Height + cc.Widget 竖屏适配后大致效果如下： 写了又删了，感觉还是附上demo实在一些。点这里下载++demo.zip++ ps：Cocos Creator版本为2.0.2。]]></content>
+    <url>%2F2019-04-12-cocos-creator-%E5%85%A8%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D.html</url>
+    <content type="text"><![CDATA[前言之前总是看到很多同学在论坛上询问关于&quot;Cocos Creator&quot;屏幕适配相关的问题 这里简单说一下&quot;Cocos Creator 全屏幕适配&quot; ps：文章中已附上demo，Cocos Creator版本为2.0.2 解决方案其实利用好 Fit Width 和 Fit height 以及 cc.Widget组件 适配起来真的很简单。 对于设计为竖屏的游戏，采用Fit Width + cc.Widget 对于设计为横屏的游戏，采用Fit Height + cc.Widget 竖屏适配后大致效果如下： 文章写了又删了，感觉写得不怎样。还是附上demo实在一些，点这里下载demo.zip 。]]></content>
       <categories>
         <category>Cocos Creator</category>
       </categories>
