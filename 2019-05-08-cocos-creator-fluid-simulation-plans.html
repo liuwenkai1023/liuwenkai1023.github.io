@@ -119,19 +119,19 @@
 
 
 
-  <meta name="description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。刚好最近我手上事情不多，思考了一下这款游戏里的流体该如何模拟。文末附上demo。 效果图">
+  <meta name="description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。  刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。">
 <meta name="keywords" content="流体模拟">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论CocosCreator中的流体模拟的几种方案">
 <meta property="og:url" content="https://blog.liuwenkai.org/2019-05-08-cocos-creator-fluid-simulation-plans.html">
 <meta property="og:site_name" content="Kai&#39;s Blog.">
-<meta property="og:description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。刚好最近我手上事情不多，思考了一下这款游戏里的流体该如何模拟。文末附上demo。 效果图">
+<meta property="og:description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。  刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://forum.cocos.com/uploads/default/original/3X/f/7/f7d35f4e6ec858fc02750ed2d02ac20cbbb8cef9.gif">
 <meta property="og:updated_time" content="2019-05-08T06:26:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="论CocosCreator中的流体模拟的几种方案">
-<meta name="twitter:description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。刚好最近我手上事情不多，思考了一下这款游戏里的流体该如何模拟。文末附上demo。 效果图">
+<meta name="twitter:description" content="前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。  刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。">
 <meta name="twitter:image" content="https://forum.cocos.com/uploads/default/original/3X/f/7/f7d35f4e6ec858fc02750ed2d02ac20cbbb8cef9.gif">
 
 
@@ -484,9 +484,11 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。刚好最近我手上事情不多，思考了一下这款游戏里的流体该如何模拟。文末附上demo。</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><pre><code>之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。
+
+刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。
+</code></pre><a id="more"></a>
 <h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://forum.cocos.com/uploads/default/original/3X/f/7/f7d35f4e6ec858fc02750ed2d02ac20cbbb8cef9.gif" alt="效果图"></p>
-<a id="more"></a>
 <h3 id="物理系统的使用"><a href="#物理系统的使用" class="headerlink" title="物理系统的使用"></a>物理系统的使用</h3><p>物理系统：box2d</p>
 <p>物理组件：主要通过cc.PhysicsCircleCollider来模拟流体的运动</p>
 <h3 id="流体的几种模拟渲染方案"><a href="#流体的几种模拟渲染方案" class="headerlink" title="流体的几种模拟渲染方案"></a>流体的几种模拟渲染方案</h3><ol>
@@ -506,7 +508,7 @@
 </ol>
 <p>PS1: 场强值已经被我转换成带有透明度的纯色图片,所有才会有2和3。</p>
 <p>PS2: 这里低端机指的是 <strong>红米1s</strong></p>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p> Metaballs and WebGL: <a href="http://jamie-wong.com/2016/07/06/metaballs-and-webgl/" target="_blank" rel="noopener">++链接地址++</a>，它详细的讲述了如何使用WebGL来渲染Metaballs。通过这篇文章，我把里面的frag改成CocosCretor可以使用的的</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p> Metaballs and WebGL: <a href="http://jamie-wong.com/2016/07/06/metaballs-and-webgl/" target="_blank" rel="noopener">++链接地址++</a>，它详细的讲述了如何使用WebGL来渲染Metaballs。</p>
 <h3 id="Demo下载地址"><a href="#Demo下载地址" class="headerlink" title="Demo下载地址"></a>Demo下载地址</h3><p>demo里我没有上传第二种实现方式<br><a href="https://forum.cocos.com/uploads/default/original/3X/3/6/368ca1ea9c518194aca709fadd44e31856b3f37d.zip" target="_blank" rel="noopener">demo下载地址</a></p>
 
       
