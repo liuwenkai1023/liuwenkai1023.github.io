@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[论CocosCreator中的流体模拟的几种方案]]></title>
     <url>%2F2019-05-08-cocos-creator-fluid-simulation-plans.html</url>
-    <content type="text"><![CDATA[前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。 刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。 效果图 物理系统的使用物理系统：box2d 物理组件：主要通过cc.PhysicsCircleCollider来模拟流体的运动 流体的几种模拟渲染方案 使用Shader进行场强叠加计算并渲染（shader计算量大，低端机太卡） 单纯利用Blend来模拟场强的叠加（低端机勉强可以跑50fps，颜色叠加后只能用黑色背景，无法进行商用） 一个综合的处理方式，步骤如下：（低端机勉强可以跑40-45fps，没有任何”后遗症”） 利用Blend模拟场强叠加后，使用单独的Camera进行渲染并输出到RenderTexture 利用这个RenderTexture创建一个SpriteFrame。 利用这个SpriteFrame显示在Sprite上 使用shader或者Mask组件对这个Sprite显示的内容进行裁剪 在Mask和shader之间我选择了使用shader来进行裁剪（Mask裁剪精度太低） PS1: 场强值已经被我转换成带有透明度的纯色图片,所有才会有2和3。 PS2: 这里低端机指的是 红米1s 参考资料 Metaballs and WebGL: ++链接地址++，它详细的讲述了如何使用WebGL来渲染Metaballs。 Demo下载地址demo里我没有上传第二种实现方式 ++demo下载地址++ ++git仓库地址++]]></content>
+    <content type="text"><![CDATA[前言之前试玩“HappyGlass”这款游戏，整体感觉还不错，而且实现也应该比较简单。 刚好最近我手上事情不多，思考了一下Creator里的流体该如何模拟。文末附上demo。 效果图 物理系统的使用物理系统：box2d 物理组件：主要通过cc.PhysicsCircleCollider来模拟流体的运动 流体的几种模拟渲染方案 使用Shader进行场强叠加计算并渲染（shader计算量大，低端机太卡） 单纯利用Blend来模拟场强的叠加（低端机勉强可以跑50fps，颜色叠加后只能用黑色背景，无法进行商用） 一个综合的处理方式，步骤如下：（低端机勉强可以跑40-45fps，没有任何”后遗症”） 利用Blend模拟场强叠加后，使用单独的Camera进行渲染并输出到RenderTexture 利用这个RenderTexture创建一个SpriteFrame。 利用这个SpriteFrame显示在Sprite上 使用shader或者Mask组件对这个Sprite显示的内容进行裁剪 在Mask和shader之间我选择了使用shader来进行裁剪（Mask裁剪精度太低） PS1: 场强值已经被我转换成带有透明度的纯色图片,所有才会有2和3。 PS2: 这里低端机指的是 红米1s 参考资料 Metaballs and WebGL: 链接地址，它详细的讲述了如何使用WebGL来渲染Metaballs。 Demo下载地址demo里我没有上传第二种实现方式 demo下载地址 git仓库地址]]></content>
       <categories>
         <category>Cocos Creator</category>
       </categories>
