@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.liuwenkai.org/2019-04-12-cocos-creator-%E5%85%A8%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D.html</loc>
-    <lastmod>2019-04-12</lastmod>
+    <loc>https://blog.liuwenkai.org/2019-05-08-cocos-creator-fluid-simulation-plans.html</loc>
+    <lastmod>2019-05-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.liuwenkai.org/2018-11-12-cocos-creator-full-screen-adaptive.html</loc>
+    <lastmod>2018-11-12</lastmod>
+  </url>  <url>
+    <loc>https://blog.liuwenkai.org/2018-10-08-cocos-creator-wechat-game-share.html</loc>
+    <lastmod>2018-10-08</lastmod>
   </url>  <url>
     <loc>https://blog.liuwenkai.org/2017-10-23-use-github-pages-and-hexo-to-build-a-blog.html</loc>
     <lastmod>2017-10-23</lastmod>
